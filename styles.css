@@ -1,0 +1,151 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #007a18;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: auto;
+    max-width: 100px; /* Adjusts the logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px; /* Adds space around the links for better proximity */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.info-box {
+    background-color: white; /* White background */
+    padding: 18px; /* Space inside the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Maximum width of the box */
+    margin: 20px auto; /* Center the box horizontally with margin */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0dd434;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px auto; /* Center the button */
+    display: block; /* Makes button block level */
+    font-weight: bold; /* Emphasis on button text */
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: left;
+    margin: 0 auto; /* Center the form container */
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Button for closing popup */
+button[type="button"] {
+    background-color: red;
+    margin-top: 10px;
+}
+
+/* Responsive images */
+.welcome-image {
+    width: 50%;         /* Makes the image scale to fit its container */
+    height: auto;        /* Maintains the aspect ratio */
+    max-width: 700px;    /* Limits the maximum width */
+    display: block;      /* Centers the image if it's in a container */
+    margin: 20px auto;   /* Centers image and adds spacing */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .info-box {
+        padding: 20px;
+    }
+
+    /* Adjust font sizes for smaller screens */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%; /* Makes buttons full width on smaller screens */
+    }
+}
+
+.info-box {
+    margin-bottom: 20px; /* Space between info boxes */
+    text-align: center; /* Center text in the info box */
+}
+
+.mission-vision {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the columns within the flex container */
+    margin: 20px 0; /* Margin above and below the section */
+}
+
+.vision, .mission {
+    width: 48%; /* Set a width for each column to leave space for margins */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    padding: 10px; /* Add padding inside the boxes */
+    text-align: center; /* Center text in each column */
+}
+
+
+h2 {
+    margin-bottom: 10px; /* Space below headings */
+}
